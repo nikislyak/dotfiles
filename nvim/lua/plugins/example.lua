@@ -1,6 +1,20 @@
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
-if true then return {} end
+-- if true then return {} end
+if true then
+  return {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_dotfiles = false,
+          hide_gitignored = false,
+        }
+      }
+    }
+  }
+end
 
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
 --
