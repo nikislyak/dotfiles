@@ -51,3 +51,6 @@ font-family = "Menlo"
 cursor-style = block
 
 theme = Material Design Colors
+
+window-width = 150
+window-height = 50
