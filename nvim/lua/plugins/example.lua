@@ -3,16 +3,27 @@
 -- if true then return {} end
 if true then
   return {
-    "nvim-neo-tree/neo-tree.nvim",
-    opts = {
-      filesystem = {
-        filtered_items = {
-          visible = true,
-          hide_dotfiles = false,
-          hide_gitignored = false,
+    {
+      "nvim-neo-tree/neo-tree.nvim",
+      opts = {
+        filesystem = {
+          filtered_items = {
+            visible = true,
+            hide_dotfiles = false,
+            hide_gitignored = false,
+          }
         }
       }
-    }
+    },
+    {
+      "neovim/nvim-lspconfig",
+      ---@class PluginLspOpts
+      opts = {
+        servers = {
+          sourcekit = {},
+        },
+      },
+    },
   }
 end
 
