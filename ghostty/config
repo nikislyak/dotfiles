@@ -54,3 +54,4 @@ theme = Material Design Colors
 
 window-width = 150
 window-height = 50
+shell-integration-features=ssh-env,no-cursor
